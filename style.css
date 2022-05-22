@@ -1,0 +1,39 @@
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,900;1,700;1,900&family=Oleo+Script+Swash+Caps&display=swap');
+</style>
+body{
+    font-family: 'Lato', sans-serif;
+font-family: 'Oleo Script Swash Caps', cursive;
+}
+
+.offcanvas{
+    background-color: #4e73f4;
+    color: white;
+}
+
+@media (max-width: 992px) {
+    body{
+        overflow: auto !important;
+    }
+}
+@media(min-width: 992px){
+    body{
+        overflow: auto !important;
+    }
+}
+.sidebar-nav{
+    transform: none !important;
+    width: var(--off-canvas-width);
+    -webkit-transform: none;
+    visability:visable !important;
+    /* top:var(--topNavbarHeight);
+    height: calc(100% - var(--topNavbarHeight)); */
+    /* top: calc(100% - 70px);
+    height: 70px; */
+}
+.offcanvas-backdrop::before{
+    display:none;
+}
+.offcanvas-backdrop.show{
+    display: none;
+}
